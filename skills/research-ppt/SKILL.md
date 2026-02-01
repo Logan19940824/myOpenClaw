@@ -17,9 +17,20 @@
   "topic": "<研究主题>",
   "output": "<输出文件路径>",
   "slides": "<幻灯片数量>",  // 可选，默认 10
-  "language": "<语言>"       // 可选，默认 "zh"
+  "language": "<语言>",       // 可选，默认 "zh"
+  "theme": "<主题>"          // 可选，默认 "modern-blue"
 }
 ```
+
+## 主题选择
+
+| 主题 | 风格 | 适合场景 |
+|------|------|----------|
+| `modern-blue` | 现代蓝（推荐） | 通用场景 |
+| `business` | 商务深蓝 | 正式报告 |
+| `tech` | 科技黑绿 | 技术演示 |
+| `nature` | 自然绿 | 环保主题 |
+| `gradient-purple` | 渐变紫 | 创意演示 |
 
 ## 示例
 
@@ -28,7 +39,8 @@
   "topic": "人工智能在医疗领域的应用",
   "output": "ai-medical-report.pptx",
   "slides": 12,
-  "language": "zh"
+  "language": "zh",
+  "theme": "modern-blue"
 }
 ```
 
