@@ -1,0 +1,13 @@
+{
+  "name": "login-app",
+  "version": "1.0.0",
+  "description": "响应式登录界面 - 适配移动端和Web端",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": ["login", "responsive", "mobile", "web"],
+  "author": "",
+  "license": "MIT"
+}
