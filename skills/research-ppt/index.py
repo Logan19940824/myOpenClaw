@@ -43,6 +43,7 @@ from pptx.enum.shapes import MSO_SHAPE
 
 # 主题配色方案
 THEMES = {
+    # 默认主题
     "modern-blue": {
         "primary": RGBColor(0, 102, 204),      # 蓝色
         "secondary": RGBColor(51, 153, 255),   # 浅蓝
@@ -52,8 +53,11 @@ THEMES = {
         "text_primary": RGBColor(0, 51, 102),
         "text_secondary": RGBColor(102, 102, 102),
         "font_title": "Microsoft YaHei",
-        "font_body": "Microsoft YaHei"
+        "font_body": "Microsoft YaHei",
+        "bg_style": "gradient"
     },
+    
+    # 商务主题
     "business": {
         "primary": RGBColor(0, 51, 102),       # 深蓝
         "secondary": RGBColor(51, 51, 51),     # 灰色
@@ -63,8 +67,11 @@ THEMES = {
         "text_primary": RGBColor(0, 0, 0),
         "text_secondary": RGBColor(80, 80, 80),
         "font_title": "Arial",
-        "font_body": "Arial"
+        "font_body": "Arial",
+        "bg_style": "solid"
     },
+    
+    # 科技主题
     "tech": {
         "primary": RGBColor(16, 185, 129),     # 绿色
         "secondary": RGBColor(99, 102, 241),   # 紫色
@@ -74,8 +81,11 @@ THEMES = {
         "text_primary": RGBColor(255, 255, 255),
         "text_secondary": RGBColor(200, 200, 200),
         "font_title": "Segoe UI",
-        "font_body": "Segoe UI"
+        "font_body": "Segoe UI",
+        "bg_style": "dark"
     },
+    
+    # 自然主题
     "nature": {
         "primary": RGBColor(34, 139, 34),      # 森林绿
         "secondary": RGBColor(85, 107, 47),    # 橄榄色
@@ -85,8 +95,11 @@ THEMES = {
         "text_primary": RGBColor(0, 100, 0),
         "text_secondary": RGBColor(60, 80, 60),
         "font_title": "Georgia",
-        "font_body": "Calibri"
+        "font_body": "Calibri",
+        "bg_style": "gradient"
     },
+    
+    # 渐变紫主题
     "gradient-purple": {
         "primary": RGBColor(128, 0, 128),      # 紫色
         "secondary": RGBColor(255, 0, 255),    # 粉紫
@@ -96,7 +109,92 @@ THEMES = {
         "text_primary": RGBColor(64, 0, 64),
         "text_secondary": RGBColor(100, 100, 100),
         "font_title": "Verdana",
-        "font_body": "Verdana"
+        "font_body": "Verdana",
+        "bg_style": "gradient"
+    },
+    
+    # 🎨 精品模板1: 渐变橙色 (活力风格)
+    "gradient-orange": {
+        "name": "活力橙",
+        "primary": RGBColor(255, 140, 0),      # 橙色
+        "secondary": RGBColor(255, 69, 0),     # 红橙
+        "accent": RGBColor(255, 215, 0),       # 金色
+        "bg_gradient_start": RGBColor(255, 248, 240),
+        "bg_gradient_end": RGBColor(255, 224, 178),
+        "text_primary": RGBColor(139, 69, 19),
+        "text_secondary": RGBColor(160, 82, 45),
+        "font_title": "Microsoft YaHei",
+        "font_body": "Microsoft YaHei",
+        "bg_style": "gradient",
+        "has_watermark": True
+    },
+    
+    # 🎨 精品模板2: 高级黑金 (奢华风格)
+    "premium-black-gold": {
+        "name": "高级黑金",
+        "primary": RGBColor(218, 165, 32),     # 金色
+        "secondary": RGBColor(139, 69, 19),    # 棕色
+        "accent": RGBColor(255, 215, 0),       # 金色
+        "bg_gradient_start": RGBColor(30, 30, 30),
+        "bg_gradient_end": RGBColor(50, 50, 50),
+        "text_primary": RGBColor(255, 215, 0),
+        "text_secondary": RGBColor(200, 200, 200),
+        "font_title": "Arial Black",
+        "font_body": "Georgia",
+        "bg_style": "dark",
+        "has_watermark": True,
+        "decorative_lines": True
+    },
+    
+    # 🎨 精品模板3: 极简白 (商务极简)
+    "minimal-white": {
+        "name": "极简白",
+        "primary": RGBColor(0, 0, 0),          # 黑色
+        "secondary": RGBColor(128, 128, 128),  # 灰色
+        "accent": RGBColor(0, 0, 0),           # 黑色
+        "bg_gradient_start": RGBColor(255, 255, 255),
+        "bg_gradient_end": RGBColor(255, 255, 255),
+        "text_primary": RGBColor(0, 0, 0),
+        "text_secondary": RGBColor(80, 80, 80),
+        "font_title": "Helvetica",
+        "font_body": "Helvetica",
+        "bg_style": "solid",
+        "has_watermark": False,
+        "decorative_lines": False
+    },
+    
+    # 🎨 精品模板4: 渐变青蓝 (科技未来)
+    "tech-future": {
+        "name": "科技未来",
+        "primary": RGBColor(0, 206, 209),      # 深青色
+        "secondary": RGBColor(30, 144, 255),   # 道奇蓝
+        "accent": RGBColor(0, 255, 127),       # 春绿色
+        "bg_gradient_start": RGBColor(0, 30, 60),
+        "bg_gradient_end": RGBColor(0, 60, 100),
+        "text_primary": RGBColor(255, 255, 255),
+        "text_secondary": RGBColor(180, 220, 255),
+        "font_title": "Segoe UI",
+        "font_body": "Segoe UI",
+        "bg_style": "dark",
+        "has_watermark": True,
+        "decorative_circuits": True
+    },
+    
+    # 🎨 精品模板5: 红色中国风 (喜庆风格)
+    "chinese-red": {
+        "name": "中国红",
+        "primary": RGBColor(178, 34, 34),      # 深红
+        "secondary": RGBColor(220, 20, 60),    # 猩红
+        "accent": RGBColor(255, 215, 0),       # 金色
+        "bg_gradient_start": RGBColor(255, 240, 240),
+        "bg_gradient_end": RGBColor(255, 200, 200),
+        "text_primary": RGBColor(139, 0, 0),
+        "text_secondary": RGBColor(178, 34, 34),
+        "font_title": "Microsoft YaHei",
+        "font_body": "Microsoft YaHei",
+        "bg_style": "gradient",
+        "has_watermark": False,
+        "decorative_pattern": "cloud"
     }
 }
 
