@@ -32,7 +32,7 @@ import requests
 from bs4 import BeautifulSoup
 from pptx import Presentation
 from pptx.util import Inches, Pt
-from pptx.dml.color import RgbColor
+from pptx.dml.color import RGBColor
 from pptx.enum.text import PP_ALIGN
 
 
@@ -118,7 +118,7 @@ class ResearchPPTSkill:
         
         content = {
             "title": topic,
-            "subtitle": f"{lang['title']} - {datetime.now().strftime('%Y-%m-%d'))}",
+            "subtitle": f"{lang['title']} - {datetime.now().strftime('%Y-%m-%d')}",
             "slides": []
         }
         
